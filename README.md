@@ -75,4 +75,4 @@ summaryData$subject_no <- as.numeric(summaryData$subject_no)
 summaryData <- summaryData[with(summaryData,order(subject_no,activity,variable)),]
 
 #writing the summaryData to file named "CP1-Tidy Data.txt in the working directory
-write.table(summaryData,file="CP1-Tidy Data.txt")
+write.table(summaryData,file="CP1-Tidy Data.txt", row.name=FALSE)
